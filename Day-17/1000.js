@@ -27,16 +27,16 @@ function write(string) {
 }
 
 function main() {
-    const input = readInput(); // 1 
+    const input = readInput(); //  '1 4'
     /********** */
     //console.log(input);
-    const tokens = input.split(' ');
+    const tokens = input.split(' ');// ['1','4']
     //console.log(tokens);
 
-    let a = Number(tokens[0]);
-    let b = Number(tokens[1]);
+    let a = Number(tokens[0]); // 1
+    let b = Number(tokens[1]); // 4
     
-    let result = a + b;
+    let result = a + b; // 5
 
     /********** */
     write(result);
