@@ -46,7 +46,9 @@ function main() {
     write('\n');
     write((A % C + B % C) % C);
     write('\n');
-//     write(A*B)%C
+    write((A * B) % C);
+    write('\n');
+    write((A % C * B % C) % C);
 }
 
 main();
