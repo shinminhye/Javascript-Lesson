@@ -83,7 +83,6 @@ function main() {
     }
     */
 
-
     // console.log({line2:Number(line2)})
 }
 
