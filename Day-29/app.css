@@ -8,9 +8,9 @@ html, body {
 }
 
 .calculator {
+    user-select: none;
     height: 100%;
     width: 100%;
-    background-color: #313131;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,11 +22,19 @@ html, body {
     text-align: right;
     font-size: 10vh;
     display: flex;
-    flex-direction: column;
-    align-items: right;
-    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
     padding-right: 20px;
+    background-color: #313131;
+
+    transition: background-color .5s;
 }
+
+.display:active {
+    background-color: #454545;
+}
+
 .pad {
     flex: 5;
 
@@ -46,10 +54,6 @@ html, body {
     border-top: 1px solid #323232;
 }
 
-.pad--line:first-child {
-    background-color: #444444;
-}
-
 .pad--line__btn {
     flex: 1;
     display: flex;
@@ -61,9 +65,26 @@ html, body {
     font-size: 6vh;
 }
 
-.pad--line__btn:last-child{
-    background-color: #ff9f09;
+.pad--line__btn:active {
+    background-color: #777777;
+}
+
+.pad--line:first-child .pad--line__btn{
+    background-color: #444444;
+}
+
+.pad--line:first-child .pad--line__btn:active {
+    background-color: #555555;
+}
+
+
+.pad--line__btn:last-child {
+    background-color: #ff9f09 !important;
     border-right: none;
+}
+
+.pad--line__btn:last-child:active {
+    background-color:#ffbc52 !important;
 }
 
 .pad--line__btn2{
